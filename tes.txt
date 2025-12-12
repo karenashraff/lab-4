@@ -1,0 +1,31 @@
+public class student{
+private string name;
+private double finalgrade;
+
+public student(string name,string finalgrade){
+this.name=name;
+this.finalgrade=finalgrade;
+
+} 
+}
+
+public String calculateGrade() {
+        if (finalGrade >= 90) {
+            return "A";
+        } else if (finalGrade >= 80) {
+            return "C";
+        } else if (finalGrade >= 70) {
+            return "B";
+        } else if (finalGrade >= 60) {
+            return "D";
+        } else {
+            return "F"; } }
+public class StudentTest {
+
+    @Test
+    public void testCalculateGrade() {
+        Student student = new Student("Ahmed", 82.0);
+        String grade = student.calculateGrade();
+        assertEquals("B", grade, "Grade should be B");
+    }
+}
