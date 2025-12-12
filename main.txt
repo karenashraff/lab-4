@@ -1,1 +1,1 @@
-print 1
+sum1(print 1)
